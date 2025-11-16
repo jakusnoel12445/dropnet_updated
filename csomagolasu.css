@@ -1,0 +1,111 @@
+
+/* Alap beállítások örökölve a style.css-ből */
+
+.csomagolasu {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.csomagolasu h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.csomagolasu .lead {
+  opacity: 0.85;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+/* Kártyák */
+.guide-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.guide-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s;
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.guide-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Táblázat */
+.size-limits {
+  margin-bottom: 3rem;
+}
+
+.size-limits table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.size-limits th, .size-limits td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.size-limits th {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.size-limits tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Tiltott lista */
+.forbidden {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.forbidden h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.forbidden ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.back-button {
+  position: relative;  /* biztosítja, hogy a z-index működjön */
+  z-index: 10;         /* legyen a háttér fölött */
+  padding: 2rem;
+  text-align: left;
+}
+.back-button .btn {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.back-button .btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  color: #000e31;
+}

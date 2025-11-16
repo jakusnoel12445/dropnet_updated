@@ -1,0 +1,69 @@
+/* ==== Vissza gomb ==== */
+.back-button {
+  padding: 2rem;
+  text-align: left;
+}
+
+.back-button .btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.back-button .btn:hover {
+  background: rgba(255,255,255,0.35);
+  color: #000e31;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* ==== Rólunk szekció ==== */
+.about-us {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Kártya stílus */
+.about-card {
+  background: rgba(255,255,255,0.07); /* halványabb, kevésbé kontrasztos */
+  backdrop-filter: blur(10px);        /* üveg hatás */
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25); /* enyhébb árnyék */
+  text-align: left;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  border: none;  /* éles csíkot okozó border eltávolítva */
+}
+
+
+.about-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+  background: rgba(255,255,255,0.1);
+}
+
+.about-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.about-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Mobil optimalizálás */
+@media (max-width: 480px) {
+  .about-card h2 { font-size: 1.5rem; }
+  .about-card p { font-size: 0.95rem; }
+}

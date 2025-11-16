@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Csomagolási útmutató - DropNet</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Speciális stílus a csomagolási oldalhoz */
+    .csomagolas {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+
+    .csomagolas .lead {
+      opacity: 0.85;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+
+    /* Kártyák */
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .service-card h2 {
+      margin-bottom: 0.7rem;
+      font-size: 1.3rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Táblázat */
+    .size-limits {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .size-limits table {
+      width: 90%;
+      max-width: 700px;
+      margin: 1rem auto;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .size-limits th, .size-limits td {
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    .size-limits th {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .size-limits tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Tiltott lista */
+    .forbidden {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      line-height: 1.6;
+    }
+
+    .forbidden h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .forbidden ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Vissza gomb -->
+  <div class="back-button">
+    <a href="index.php" class="btn">← Vissza a főoldalra</a>
+  </div>
+
+  <section class="csomagolas">
+    <h1>Csomagolási útmutató</h1>
+    <p class="lead">A megfelelő csomagolás elengedhetetlen a gyors és biztonságos kézbesítéshez. Az alábbi útmutató segít, hogy küldeménye épségben célba érjen.</p>
+
+    <!-- Kártyák -->
+    <div class="cards-container">
+      <div class="service-card">
+        <h2>Külső csomagolás</h2>
+        <p>Legalább háromrétegű kartondobozt használj. Erősítsd meg a sarkokat és éleket, és kerüld a sérült dobozokat.</p>
+      </div>
+
+      <div class="service-card">
+        <h2>Belső tér kitöltése</h2>
+        <p>Töltsd ki az üres részeket megfelelő kitöltőanyaggal. A termék ne mozogjon szabadon, és ne érintkezzen közvetlenül a doboz falával.</p>
+      </div>
+
+      <div class="service-card">
+        <h2>Rögzítés, ragasztás</h2>
+        <p>Ragaszd körbe a dobozt erős szalaggal. Nehezebb csomagoknál alkalmazz dupla ragasztást.</p>
+      </div>
+
+      <div class="service-card">
+        <h2>Címzés</h2>
+        <p>A címkét a legnagyobb felületre ragaszd. Távolítsd el a régi címzéseket. Ne pántold össze a csomagokat – minden küldemény külön legyen.</p>
+      </div>
+    </div>
+
+    <!-- Méret és súlyhatárok -->
+    <div class="size-limits">
+      <h2>Méret és súlyhatárok</h2>
+      <p>Belföldi és export csomagoknál a maximum súlyhatár <strong>40 kg</strong>.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Paraméter</th>
+            <th>Maximum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Magasság</td><td>60 cm</td></tr>
+          <tr><td>Szélesség</td><td>80 cm</td></tr>
+          <tr><td>Hosszúság</td><td>200 cm</td></tr>
+          <tr><td>Súly</td><td>40 kg</td></tr>
+          <tr><td>Körméret</td><td>max. 3 m (2x mag. + 2x szél. + hossz)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tiltott áruféleségek -->
+    <div class="forbidden">
+      <h2>Mit nem szállítunk</h2>
+      <ul>
+        <li>Élelmiszer, romlandó áruk</li>
+        <li>Különleges kezelést igénylő áruk (pl. állítva szállítandó)</li>
+        <li>40 kg feletti csomagok</li>
+        <li>Lőszer, robbanószerek</li>
+        <li>Hőérzékeny termékek</li>
+        <li>Bőröndök, poggyászok</li>
+        <li>Különösen értékes áruk (pénz, ékszer, antikvitás, stb.)</li>
+        <li>Nem megfelelően csomagolt küldemények</li>
+        <li>Túlméretes csomagok</li>
+      </ul>
+    </div>
+
+  </section>
+
+</body>
+</html>

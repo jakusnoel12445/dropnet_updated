@@ -1,0 +1,63 @@
+/* Középre helyezés */
+.login-form {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Input mezők */
+.login-form input {
+  display:block;
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.login-form input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+  
+/* Gomb */
+.login-form button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+
+.login-form button:hover {
+  background: rgba(255,255,255,0.35);
+  transform: scale(1.11);
+}
+
+/* Vissza gomb */
+.back-button {
+  padding: 1rem 2rem;
+}
+.back-button a {
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+
+}
+
+.back-button a:hover {
+  background: rgba(255,255,255,0.35);
+  color: #000e31; 
+}
